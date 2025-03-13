@@ -1,4 +1,9 @@
 /* IMPOSTAZIONI GENERALI */
+head,
+body {
+  width: 90%;
+  margin-inline: auto;
+}
 
 body {
   background-image: url(sfondo.png);
@@ -14,8 +19,9 @@ body {
   padding-top: 20px;
   font-family: "Poppins";
   color: white;
+  margin-bottom: 20px;
 }
-a {
+#home {
   color: white;
   text-decoration: none;
 }
@@ -28,13 +34,16 @@ a {
 
 /* MAIN */
 
-#article {
+main {
   background-color: white;
   -webkit-box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, -50px -50px 0px -30px rgba(0, 0, 0, 0);
   box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, -50px -50px 0px -30px rgba(0, 0, 0, 0);
   font-family: "Poppins";
   text-align: left;
   padding: 25px;
+}
+main {
+  border-bottom: none;
 }
 
 /* ELEMENTI NEL MAIN - ARTICLE */
@@ -77,16 +86,56 @@ th {
   border-bottom: #116887;
 }
 #novità {
+  margin-top: 20px;
   background-color: #e1e2e4;
   text-align: center;
   padding: 20px;
 }
 #articoli {
   background-color: #e1e2e4;
+  padding: 10px;
+
+  border-color: #000000;
+  margin-bottom: 20px;
+}
+iframe {
+  border-radius: 20px 20px 20px 20px;
+  height: 200px;
+  width: 100%;
+}
+h2 {
   text-align: center;
-  padding: 20px;
 }
 
 /* ELEMENTI NELL' ASIDE */
+input {
+  border-bottom-style: dotted;
+}
+button {
+  background-color: #3b64c3;
+  color: white;
+  border-style: none;
+}
 
 /* FOOTER */
+footer {
+  background-image: linear-gradient(#0093b5, #116887);
+  -webkit-box-shadow: 5px 5px 14px -2px #000000;
+  box-shadow: 5px 5px 14px -2px #000000;
+  text-align: center;
+  padding: 10px;
+  color: white;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+#testa {
+  text-align: left;
+}
+#coda {
+  text-align: right;
+}
+#link {
+  padding-bottom: 20px;
+
+  color: #5db0cc;
+}
